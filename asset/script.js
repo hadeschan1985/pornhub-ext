@@ -42,7 +42,7 @@ function onload() {
         
     } else {
         if( document.body.getElementsByClassName("main-content")[0] != null) {
-            document.body.getElementsByClassName("main-content")[0].innerText = "Faça o Download e instale a extensão no seu Google Chrome!\nhttps://github.com/CodeVinc/porh/releases/tag/1.1"+
+            document.body.getElementsByClassName("main-content")[0].innerText = "Faça o Download e instale a extensão no seu Google Chrome!\nhttps://github.com/CodeVinc/pornhub-ext/releases/tag/1.1"+
             "\n\nQual quer duvida consulte o grupo ofical no telegram! \nhttps://t.me/joinchat/OupwRVOm-s9tZozr2FzVpw";
         }
     }

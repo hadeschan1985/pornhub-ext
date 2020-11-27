@@ -5,6 +5,8 @@
 // @description  Pornhub premium free
 // @match        https://*.pornhub.com/*
 // @match        https://*.pornhubpremium.com/*
+// @updateURL	 https://raw.githubusercontent.com/CodeVinc/pornhub-ext/main/app/main.js
+// @downloadURL	 https://raw.githubusercontent.com/CodeVinc/pornhub-ext/main/app/main.js
 // @connect		 hoakhuya.com
 // @grant        unsafeWindow
 // @grant        GM_download
@@ -71,7 +73,7 @@ function onloadfunction()
 							let frame;
 							frame = document.createElement("iframe");
 							frame.setAttribute("id", "frame"); 
-							frame.setAttribute("src", "https://codevinc.github.io/porh/?id=" + btoa(hls[0].videoUrl) + "&frame=" + viewkey);
+							frame.setAttribute("src", "https://codevinc.github.io/pornhub-ext/?id=" + btoa(hls[0].videoUrl) + "&frame=" + viewkey);
 							frame.setAttribute("width","100%");
 							frame.setAttribute("height","600px");
 							frame.setAttribute("frameborder","0");
@@ -106,7 +108,7 @@ function onloadfunction()
 									let frame;
 									frame = document.createElement("iframe");
 									frame.setAttribute("id", "frame"); 
-									frame.setAttribute("src", "https://codevinc.github.io/porh/?id=" + btoa(cjacodfzx[1].videoUrl) + "&frame=" + viewkey);
+									frame.setAttribute("src", "https://codevinc.github.io/pornhub-ext/?id=" + btoa(cjacodfzx[1].videoUrl) + "&frame=" + viewkey);
 									frame.setAttribute("width","100%");
 									frame.setAttribute("height","650px");
 									frame.setAttribute("frameborder","0");
