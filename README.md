@@ -8,7 +8,7 @@
 
 ![Tampermonkey](https://i.imgur.com/ujwvu7x.png)
 
-*3. Você ira para uma nova aba parecida com a de baixo!, copie todo o texto do script e cole no editor!*
+*3. Você ira para uma nova aba parecida com a de baixo!, copie todo o texto do script e substitua pelo o que ja esta no editor!*
 [Script link](https://gist.githubusercontent.com/CodeVinc/e7ee6bdc98fa6d02624aa3b8d2c08adb/raw/c45f7b84c2d98a0c24cd7175b6fce5f0fe2f75e6/main.js)
 
 ![2](https://i.imgur.com/PPfv0JK.png)
