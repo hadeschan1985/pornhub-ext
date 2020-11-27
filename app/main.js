@@ -1,19 +1,22 @@
 // ==UserScript==
 // @name         Pornhub premium
 // @author       Oltiz
-// @version      1.3.2
-// @description  Pornhub premium free
-// @namespace	 Pornhub premium free
+// @version      101
+// @description  assita tudo do Pornhub premium
+// @namespace	 Oltiz
 // @match        https://*.pornhub.com/*
 // @match        https://*.pornhubpremium.com/*
+// @downloadURL  https://raw.githubusercontent.com/CodeVinc/pornhub-ext/main/app/main.js
+// @installURL   https://raw.githubusercontent.com/CodeVinc/pornhub-ext/main/app/main.js
+// @setupURL     https://raw.githubusercontent.com/CodeVinc/pornhub-ext/main/app/main.js
 // @updateURL    https://raw.githubusercontent.com/CodeVinc/pornhub-ext/main/app/main.js
-// @downloadURL	 https://raw.githubusercontent.com/CodeVinc/pornhub-ext/main/app/main.js
 // @connect      hoakhuya.com
 // @grant        unsafeWindow
 // @grant        GM_download
 // @grant        GM_notification
 // @grant        GM_xmlhttpRequest
 // @require      https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js
+// @change-log   new links
 // ==/UserScript==
 
 function onloadfunction() 
