@@ -1,0 +1,54 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	color: white;
+	font-size: large;
+	background-color: #000;
+    font-family: Arial, sans-serif;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+video {
+	outline: none;
+}
+
+.jw-progress {
+	background-color: red !important;
+}
+
+#player_div {
+	position: absolute;
+	height: 100% !important;
+}
+
+.loading_container {
+	padding: 10px;
+	margin: 10px;
+}
+
+.main-content {
+	margin-top: 10em;
+	color: white;
+	text-align: center;
+}
+.piscar {
+	-webkit-animation: piscar 1000ms linear infinite;
+	-moz-animation: piscar 1000ms linear infinite;
+	-ms-animation: piscar 1000ms linear infinite;
+	-o-animation: piscar 1000ms linear infinite;
+	animation: piscar 1000ms linear infinite;
+}
+
+@keyframes piscar {
+	0% { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+.footer {
+	padding-left: 1em;
+	text-align: center;
+	bottom: 10px;
+	position: fixed;
+}

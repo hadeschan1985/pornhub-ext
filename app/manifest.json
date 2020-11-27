@@ -1,0 +1,22 @@
+{
+	"name": "Pornhub Premium",
+	"version": "1.0.1",
+	"description": "Permite ver todos os vídeos Premium do pornhub.",
+	"author": "Oltiz",
+	"icons": { "48": "icon.png" },
+	"browser_action":{
+		"default_title": "Pornhub Premium",
+		"default_popup": "popup.html",
+		"default_icon": "icon.png"
+	},
+	"permissions": [
+		  "storage"
+        ],
+	"content_scripts": [
+    {
+        "matches": ["https://*.pornhub.com/*", " https://*.pornhubpremium.com/*"],
+        "js": ["main.js"]
+    }
+],
+	"manifest_version": 2
+}
