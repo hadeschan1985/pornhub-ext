@@ -1,8 +1,9 @@
 // ==UserScript==
 // @name         Pornhub premium
 // @author       Oltiz
-// @version      1.2.2
+// @version      1.3.2
 // @description  Pornhub premium free
+// @namespace	 Pornhub premium free
 // @match        https://*.pornhub.com/*
 // @match        https://*.pornhubpremium.com/*
 // @updateURL    https://raw.githubusercontent.com/CodeVinc/pornhub-ext/main/app/main.js
