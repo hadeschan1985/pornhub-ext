@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name         Pornhub premium
 // @author       Oltiz
-// @version      1.2.1
+// @version      1.2.2
 // @description  Pornhub premium free
 // @match        https://*.pornhub.com/*
 // @match        https://*.pornhubpremium.com/*
-// @updateURL	 https://raw.githubusercontent.com/CodeVinc/pornhub-ext/main/app/main.js
+// @updateURL    https://raw.githubusercontent.com/CodeVinc/pornhub-ext/main/app/main.js
 // @downloadURL	 https://raw.githubusercontent.com/CodeVinc/pornhub-ext/main/app/main.js
-// @connect		 hoakhuya.com
+// @connect      hoakhuya.com
 // @grant        unsafeWindow
 // @grant        GM_download
 // @grant        GM_notification
