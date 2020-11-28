@@ -1,13 +1,14 @@
 body {
 	margin: 0px;
 	padding: 0px;
-	color: white;
+	color: white !important;
 	font-size: large;
-	background-color: #000;
-    font-family: Arial, sans-serif;
+	background-color: rgba(0, 0, 0, 0.904) !important;
+        font-family: Arial, sans-serif;
 	-webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+        -moz-box-sizing: border-box;
+	box-sizing: border-box;
+	overflow-x: hidden !important;
 }
 
 video {
@@ -29,9 +30,10 @@ video {
 }
 
 .main-content {
-	margin-top: 10em;
-	color: white;
-	text-align: center;
+	margin-top: 6em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .piscar {
 	-webkit-animation: piscar 1000ms linear infinite;
@@ -46,9 +48,59 @@ video {
 	100% { opacity: 0; }
 }
 
+.form-center {
+	/* border: solid 1px red; */
+	max-width: 50em;
+	text-align: center;
+}
+
+.form-center .input-url {
+	width: 35em;
+	padding: 5px 5px;
+	border-radius: 5px;
+}
+
+.form-center .button-url{
+	padding: 5px 20px;
+	border-radius: 5px;
+	color:rgba(0, 0, 0, 0.644);
+}
+
+.form-center .label-url {
+	font-size: 9pt;
+	text-align: left;
+	color: rgba(255, 255, 255, 0.541);
+	position: relative;
+	margin-top: 5px;
+}
+
 .footer {
 	padding-left: 1em;
 	text-align: center;
 	bottom: 10px;
 	position: fixed;
 }
+
+.pop-content {
+	width: 100%;
+	margin-top: 10em;
+	color: rgba(0, 0, 0, 0.801);
+	justify-content: center;
+	text-align: center;
+	display: flex;
+}
+
+.pop-text {
+	width: 20em;
+	background-color: white;
+	padding: 1em;
+	border-radius: 1em;
+}
+
+
+@media (max-width: 768px) { 
+	.form-center { height: 10em; min-width: 10em; text-align: center; }
+	.form-center .button-url { padding: 5px 20px; margin-top: 10px; border-radius: 5px; color:rgba(0, 0, 0, 0.644); }
+	.form-center .input-url { width: 30em; padding: 5px 1px; border-radius: 5px; }
+	.form-center .label-url { font-size: 9pt; left: 10px; text-align: left; color: rgba(255, 255, 255, 0.541); position: relative; margin-top: 5px; }
+ }
