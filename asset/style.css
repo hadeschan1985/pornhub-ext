@@ -1,6 +1,6 @@
 *{
 	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 	box-sizing: border-box;
 	overflow: hidden !important;
 }
@@ -11,7 +11,7 @@ body {
 	color: white !important;
 	font-size: large;
 	background-color: rgba(0, 0, 0, 0.904) !important;
-    	font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 video {
@@ -103,6 +103,6 @@ video {
 @media (max-width: 768px) { 
 	.form-center { height: 10em; min-width: 10em; text-align: center; }
 	.form-center .button-url { padding: 5px 20px; margin-top: 10px; border-radius: 5px; color:rgba(0, 0, 0, 0.644); }
-	.form-center .input-url { width: 30em; padding: 5px 1px; border-radius: 5px; }
+	.form-center .input-url { width: 70%; padding: 5px 1px; border-radius: 5px; }
 	.form-center .label-url { font-size: 9pt; left: 10px; text-align: left; color: rgba(255, 255, 255, 0.541); position: relative; margin-top: 5px; }
  }
