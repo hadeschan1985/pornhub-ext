@@ -4,7 +4,7 @@ function onload() {
 
     const url = new URLSearchParams(document.location.search.substring(1));
 
-    if(url.get('id') != null && url.get('frame') != null )
+    if( url.get('id') != null )
     {
         const video = window.atob(url.get('id'));
         const video_id = url.get('frame');
@@ -43,26 +43,33 @@ function onload() {
     } else {
         $("#searcBUTTON").click(function() 
         {
-            if( $("#searchURL").val() != undefined )
+            if( $("#searchURL").val() != undefined && $("#searchURL").val() != "")
             {
+                const exp = new RegExp(/(pornhubpremium\.com\/premium_signup)/);
+
                 const searchURL = $("#searchURL").val();
                 const viewkey = searchURL.split('&');
-               
-                $.ajax({url: 'https://dl.hoakhuya.com/vxs.php?js=zW3cW1x&' + viewkey[3],}).done(function( response ) {
-                    
-                    let content = document.createElement("script");
-                    content.innerHTML = response;
-                    document.body.appendChild(content);
 
-                    if(cjacodfzx != undefined)
-                    {
-                        const hls = cjacodfzx.filter(function(obj) {
-                            return obj.quality == "720"
-                        });
-                    
-                        location.href = "https://codevinc.github.io/pornhub-ext/?id=" + btoa(hls[0].videoUrl) + "&frame=" + viewkey
-                    }
-                });
+                if(exp.test(searchURL))
+                {
+                    $.ajax({url: 'https://dl.hoakhuya.com/vxs.php?js=zW3cW1x&' + viewkey[3]}).done(function( response ) {
+                        
+                        let content = document.createElement("script");
+                        content.innerHTML = response;
+                        document.body.appendChild(content);
+
+                        if(cjacodfzx != undefined)
+                        {
+                            const hls = cjacodfzx.filter(function(obj) {
+                                return obj.quality == "720"
+                            });
+                        
+                            location.href = "https://codevinc.github.io/pornhub-ext/?id=" + btoa(hls[0].videoUrl);
+                        }
+                    });
+                } else {
+                    alert('URL invalida');
+                }
             } else {
                 alert(' :( ');
             }
