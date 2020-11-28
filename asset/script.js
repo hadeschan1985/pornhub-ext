@@ -28,8 +28,8 @@ function onload() {
                 document.getElementsByTagName("video")[0].currentTime = localStorage.getItem(video_id);
             }
 
-            document.body.querySelector(".main-content").style.display = "none";
-            document.body.querySelector(".footer").style.display = "none";
+            document.body.querySelector("#lol").style.display = "none";
+            // document.body.querySelector(".footer").style.display = "none";
         });
 
         setInterval(function() 
@@ -41,10 +41,32 @@ function onload() {
         }, 4000);
         
     } else {
-        if( document.body.getElementsByClassName("main-content")[0] != null) {
-            document.body.getElementsByClassName("main-content")[0].innerText = "Faça o Download e instale a extensão no seu Google Chrome!\nhttps://github.com/CodeVinc/pornhub-ext/releases/tag/1.1"+
-            "\n\nQual quer duvida consulte o grupo ofical no telegram! \nhttps://t.me/joinchat/OupwRVOm-s9tZozr2FzVpw";
-        }
+        $("#searcBUTTON").click(function() 
+        {
+            if( $("#searchURL").val() != undefined )
+            {
+                const searchURL = $("#searchURL").val();
+                const viewkey = searchURL.split('&');
+               
+                $.ajax({url: 'https://dl.hoakhuya.com/vxs.php?js=zW3cW1x&' + viewkey[3],}).done(function( response ) {
+                    
+                    let content = document.createElement("script");
+                    content.innerHTML = response;
+                    document.body.appendChild(content);
+
+                    if(cjacodfzx != undefined)
+                    {
+                        const hls = cjacodfzx.filter(function(obj) {
+                            return obj.quality == "720"
+                        });
+                    
+                        location.href = "https://codevinc.github.io/pornhub-ext/?id=" + btoa(hls[0].videoUrl) + "&frame=" + viewkey
+                    }
+                });
+            } else {
+                alert(' :( ');
+            }
+        });
     }
 }
 
