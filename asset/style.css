@@ -1,14 +1,17 @@
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	overflow: hidden !important;
+}
+
 body {
 	margin: 0px;
 	padding: 0px;
 	color: white !important;
 	font-size: large;
 	background-color: rgba(0, 0, 0, 0.904) !important;
-        font-family: Arial, sans-serif;
-	-webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-	box-sizing: border-box;
-	overflow-x: hidden !important;
+    	font-family: Arial, sans-serif;
 }
 
 video {
@@ -96,7 +99,6 @@ video {
 	padding: 1em;
 	border-radius: 1em;
 }
-
 
 @media (max-width: 768px) { 
 	.form-center { height: 10em; min-width: 10em; text-align: center; }
