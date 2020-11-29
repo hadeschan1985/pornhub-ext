@@ -2,17 +2,16 @@
 	-webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
 	box-sizing: border-box;
-	overflow: hidden !important;
+	overflow-x: hidden !important;
 }
 
 body {
 	margin: 0px;
 	padding: 0px;
 	color: white !important;
-	font-size: large;
 	background-color: rgba(0, 0, 0, 0.904) !important;
 	font-family: Arial, sans-serif;
-	font-size: 12pt;
+	font-size: 12pt !important;
 }
 
 video {
@@ -63,11 +62,18 @@ video {
 	padding: 5px 5px;
 	border-radius: 8px;
 }
+.form-center .input-url:focus {
+	border: 1px solid red;
+}
 
 .form-center .button-url{
 	padding: 5px 20px;
 	border-radius: 5px;
 	color:rgba(0, 0, 0, 0.644);
+}
+
+.form-center .button-url:hover{
+	color: #000;
 }
 
 .form-center .label-url {
@@ -79,29 +85,28 @@ video {
 }
 
 .footer {
-	padding-left: 1em;
 	text-align: center;
-	bottom: 10px;
-	position: fixed;
+	margin-bottom: 1em;
 }
 
 .pop-content {
 	width: 100%;
-	margin-top: 10em;
-	color: rgba(0, 0, 0, 0.801);
+	margin-top: 5em;
+	color: rgba(255, 255, 255, 0.664);
 	justify-content: center;
 	text-align: center;
 	display: flex;
 }
 
 .pop-text {
-	width: 25em;
-	background-color: white;
+	width: 50em;
+
 	padding: 1em;
 	border-radius: 1em;
 }
 
 @media (max-width: 768px) { 
+	.img-tutorial { width: 90% }
 	.form-center { height: 10em; min-width: 10em; text-align: center; }
 	.form-center .button-url { padding: 5px 20px; margin-top: 10px; border-radius: 5px; color:rgba(0, 0, 0, 0.644); }
 	.form-center .input-url { width: 80%; padding: 5px 1px; border-radius: 5px; }
