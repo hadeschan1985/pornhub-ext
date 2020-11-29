@@ -1,114 +1,63 @@
-*{
-	-webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-	box-sizing: border-box;
-	overflow-x: hidden !important;
-}
-
-body {
-	margin: 0px;
-	padding: 0px;
-	color: white !important;
-	background-color: rgba(0, 0, 0, 0.904) !important;
-	font-family: Arial, sans-serif;
-	font-size: 12pt !important;
-}
-
-video {
-	outline: none;
-}
-
-.jw-progress {
-	background-color: red !important;
-}
-
-#player_div {
-	position: absolute;
-	height: 100% !important;
-}
-
-.loading_container {
-	padding: 10px;
-	margin: 10px;
-}
-
-.main-content {
-	margin-top: 6em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.piscar {
-	-webkit-animation: piscar 1000ms linear infinite;
-	-moz-animation: piscar 1000ms linear infinite;
-	-ms-animation: piscar 1000ms linear infinite;
-	-o-animation: piscar 1000ms linear infinite;
-	animation: piscar 1000ms linear infinite;
-}
-
-@keyframes piscar {
-	0% { opacity: 1; }
-	100% { opacity: 0; }
-}
-
-.form-center {
-	/* border: solid 1px red; */
-	max-width: 50em;
-	text-align: center;
-}
-
-.form-center .input-url {
-	width: 35em;
-	padding: 5px 5px;
-	border-radius: 8px;
-}
-.form-center .input-url:focus {
-	border: 1px solid red;
-}
-
-.form-center .button-url{
-	padding: 5px 20px;
-	border-radius: 5px;
-	color:rgba(0, 0, 0, 0.644);
-}
-
-.form-center .button-url:hover{
-	color: #000;
-}
-
-.form-center .label-url {
-	font-size: 9pt;
-	text-align: left;
-	color: rgba(255, 255, 255, 0.541);
-	position: relative;
-	margin-top: 5px;
-}
-
-.footer {
-	text-align: center;
-	margin-bottom: 1em;
-}
-
-.pop-content {
-	width: 100%;
-	margin-top: 5em;
-	color: rgba(255, 255, 255, 0.664);
-	justify-content: center;
-	text-align: center;
-	display: flex;
-}
-
-.pop-text {
-	width: 50em;
-
-	padding: 1em;
-	border-radius: 1em;
-}
-
-@media (max-width: 768px) { 
-	.img-tutorial { width: 90% }
-	.form-center { height: 10em; min-width: 10em; text-align: center; }
-	.form-center .button-url { padding: 5px 20px; margin-top: 10px; border-radius: 5px; color:rgba(0, 0, 0, 0.644); }
-	.form-center .input-url { width: 80%; padding: 5px 1px; border-radius: 5px; }
-	.form-center .label-url { font-size: 9pt; left: 10px; text-align: left; color: rgba(255, 255, 255, 0.541); position: relative; margin-top: 5px; }
- }
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pornhub Premium</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="asset/style.css"> 
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-0C69YC2J2B"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	</head>
+<body>
+	<!-- principal -->
+	<div id="lol">
+		<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+			<img src="https://raw.githubusercontent.com/CodeVinc/pornhub-ext/main/app/logo.png" width="155" height="50" class="d-inline-block align-top" alt="Brazzucas">		
+			<div class="collapse navbar-collapse">
+			  <div class="navbar-nav">
+				<a class="nav-link active" href="/">Home</a>
+				<a class="nav-link" href="#">Extensão para Navegador</a>
+			  </div>
+			</div>
+		  </nav>	
+		<div class="main-content">
+			<div class="form-center">
+				<input type="url" class="input-url" id="searchURL" placeholder="URL DA PAGINA PREMIUM">
+				<button class="button-url" id="searcBUTTON" type="submit">Procurar</button>
+				<div class="label-url">Examplo: https://pt.pornhubpremium.com/premium_signup?ats=XXXXXXX&join=52&pp=292&viewkey=ph5fb6d20ab4659</div>
+			</div>
+			<div class="pop-content">
+				<div class="pop-text">
+					Vá para um pagina do video no pornhub premium, copie toda a url e cole no campo acima,e clique em procurar, depois você será redirecionado para assitir o video! 
+					<div style="margin-top: 5px;">
+						<a href="https://t.me/ByOltiz" target="_blank" rel="noopener noreferrer">Canal no Telegram</a>
+					</div>
+				</div>
+			</div>
+			<img class="img-tutorial" style="margin-top: 3em; margin-bottom: 3em;" src="https://raw.githubusercontent.com/CodeVinc/pornhub-ext/main/app/Screenshot_1.png"  width="900px" alt="" srcset="">
+		</div>
+		<div class="footer">
+			Projeto criado por Oltiz
+		</div>	
+	</div>
+	<!-- player de video -->
+	<div id="player_div"></div>
+	<!-- ads -->
+	<script type="text/javascript">
+	    var adfly_id = 16408729; 
+	    var popunder_frequency_delay = 5; 
+	    var adfly_protocol = 'https';	
+	    var adfly_google_compliant = false;
+	</script>
+	<!-- google -->
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'G-0C69YC2J2B');
+	</script>
+</body> 
+	<script src="https://cdn.adf.ly/js/display.js"></script>
+	<script src="asset/jwplayer.js"></script>
+	<script src="asset/script.js"></script>
+</html>
